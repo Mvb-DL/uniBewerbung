@@ -1,0 +1,348 @@
+.biopic-sc{
+
+    .me{
+      height: 250px;
+      width: auto;
+      float: left;
+      margin-right: 10px;
+      opacity: 0.9;
+      margin-left: 5px;
+
+      @media(max-width: 992px){
+        height: 150px;
+        width: auto;
+    }
+    }
+
+    margin-bottom: 5%;
+
+    .link-container{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 10px;
+      display: inline;
+    }
+
+    .link-container a {
+      text-decoration: underline;
+      color: #6225e6;
+      cursor: pointer;
+      font-weight: 600;
+      padding:10px;
+    }
+
+    .link-container-big a:hover{
+      color: white;
+    }
+
+    .link-container-big a {
+      text-decoration: underline;
+      color: #6225e6;
+      cursor: pointer;
+      font-weight: 600;
+      padding: 10px;
+      font-size: .9em;
+      @media(max-width: 720px){
+        display: none;
+      }
+    }
+
+    .link-container a:hover{
+      color: white;
+    }
+
+    .biopic-content{
+        display: grid;
+        margin-left: 12%;
+        margin-right: 12%;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-content: center;
+        padding: 0px;
+        box-shadow: rgb(32, 34, 38, .2) 0px 5px 15px 0px;
+        background-color: rgb(32, 34, 38, 0.85);
+        border-radius: 8px;
+
+        @media(max-width: 992px){
+            grid-template-columns: repeat(1, 1fr);
+            padding: 16px;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+    }
+
+    
+    .pic-text {
+      text-align: left; 
+      color: white;/* Zentriert den Text */
+      padding-top: 15px;
+    }
+
+    #head_attr{
+      font-size: 1.1em;
+    }
+
+    #attr{
+      padding-left: 0px;
+    }
+
+    .content{
+      width: 250px;
+      height: auto;
+      float: right;
+      padding-top: 15px;
+      padding-left: 15px;
+      align-items: center;
+      color: white;
+      font-size: .9em;
+
+      @media(max-width: 1200px){
+        display: none;
+      }
+    }
+
+    .content:hover {
+      color:#6225e6
+    }
+
+    .biopic-text {
+      font-size: .8em;
+      overflow: hidden;
+      margin-top: 5%;
+      display: none;
+
+      @media(max-width: 1200px){
+       font-size: .5em;
+       display: inline;
+    }
+    }
+
+    .item_one1 {
+        padding-top: 20px;
+        grid-column: 1 / 2; /* Start from column 1 and end at column 2 */
+        align-self: center; /* Das Element an der oberen Kante des Rasters ausrichten */
+
+        @media(max-width: 720px){
+          grid-column: 1 / 1;
+       }
+    }
+
+    .item_one2 {
+        grid-column: 2 / 2; 
+        padding: 20px;
+
+        @media(max-width: 720px){
+          grid-column: 2 / 1;
+       }
+      }
+    
+      .biopic-header-name{
+        padding-bottom: 15px;
+        padding-left: 20px;
+        
+      }
+  
+  .start-text{
+        margin-left: -55px;
+        text-align: left;
+        
+  }
+
+.design-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    max-width: 450px;
+    padding: 30px 0;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .timeline {
+    width: 100%;
+    height: auto;
+    max-width: 450px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .timeline-component:hover{
+    color:#6225e6;
+    scale: (1.1);
+    cursor: pointer;
+  }
+  
+  .timeline-content {
+    background: #1f1f1f;
+    -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+            box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+    border-radius: 5px;
+    color: white;
+    padding: 1rem;
+    transition: 0.4s ease;
+    overflow-wrap: break-word !important;
+    margin: 0.7rem;
+    border-radius: 6px;
+    width: auto;
+  }
+
+  .timeline-component {
+    margin: 0px 20px 20px 20px;
+  }
+  
+  @media screen and (min-width: 768px) {
+
+    .timeline {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .timeline-left {
+        --blur: 1.75rem;
+        --box-blur: calc(0.5 * var(--blur));
+        position: relative;
+        box-shadow: 
+          /* --- "glass" tube --- */
+          /* inside */ inset 0 0 0 0.8px #6225e6,
+          /* outside */      0 0 0 0.8px #6225e6,
+          /* --- glow --- */
+           /* inside */ inset 0 0 var(--box-blur) #6225e6,
+          /* outside */      0 0 var(--box-blur) #6225e6;
+      width: 4px;
+      height: 100%;
+    }
+
+    .timeline-right {
+        position: relative;
+        --blur: 1.75rem;
+        --box-blur: calc(0.5 * var(--blur));
+        position: relative;
+        
+        box-shadow: 
+          /* --- "glass" tube --- */
+          /* inside */ inset 0 0 0 0.8px #6225e6,
+          /* outside */      0 0 0 0.8px #6225e6,
+          /* --- glow --- */
+           /* inside */ inset 0 0 var(--box-blur) #6225e6,
+          /* outside */      0 0 var(--box-blur) #6225e6;
+        width: 4px;
+        height: 100%;
+      }
+
+    .timeline-middle {
+        position: relative;
+        --blur: 1.75rem;
+        --box-blur: calc(0.5 * var(--blur));
+        box-shadow: 
+        /* --- "glass" tube --- */
+        /* inside */ inset 0 0 0 0.8px #6225e6,
+        /* outside */      0 0 0 0.8px #6225e6,
+        /* --- glow --- */
+         /* inside */ inset 0 0 var(--box-blur) #6225e6,
+        /* outside */      0 0 var(--box-blur) #6225e6;
+      
+        width: 80px;
+        height: 4px;
+      }
+
+    .timeline-middle-leftover{
+        position: relative;
+        --blur: 1.75rem;
+        --box-blur: calc(3 * var(--blur));
+        box-shadow: 
+        /* --- "glass" tube --- */
+        /* inside */ inset 0 0 0 0.8px #6225e6,
+        /* outside */      0 0 0 0.8px #6225e6,
+        /* --- glow --- */
+         /* inside */ inset 0 0 var(--box-blur) #6225e6,
+        /* outside */      0 0 var(--box-blur) #6225e6;;
+        width: 86px;
+        height: 4px;
+        left: 100%
+    }
+
+      .timeline-circle-middle {
+        position: absolute;
+        left: 5%;
+        top: -7px;
+        width: 15px;
+        height: 15px;
+        border-radius: 4px;
+        --blur: 1.75rem;
+        --box-blur: calc(3 * var(--blur));
+        box-shadow: 
+        /* --- "glass" tube --- */
+        /* inside */ inset 0 0 0 0.8px #6225e6,
+        /* outside */      0 0 0 0.8px #6225e6,
+        /* --- glow --- */
+         /* inside */ inset 0 0 var(--box-blur) #6225e6,
+        /* outside */      0 0 var(--box-blur) #6225e6;;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+      }
+
+      .timeline-circle-right {
+        position: absolute;
+        top: -6px;
+        left: 2px;
+        width: 15px;
+        height: 15px;
+        border-radius: 4px;
+        --blur: 1.75rem;
+        --box-blur: calc(3 * var(--blur));
+        box-shadow: 
+        /* --- "glass" tube --- */
+        /* inside */ inset 0 0 0 0.8px #6225e6,
+        /* outside */      0 0 0 0.8px #6225e6,
+        /* --- glow --- */
+         /* inside */ inset 0 0 var(--box-blur) #6225e6,
+        /* outside */      0 0 var(--box-blur) #6225e6;;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+      }
+
+      .timeline-circle-right-leftover {
+        position: absolute;
+        left: 96%;
+        top: -6px;
+        width: 15px;
+        height: 15px;
+        border-radius: 4px;
+        --blur: 1.75rem;
+        --box-blur: calc(3 * var(--blur));
+        box-shadow: 
+        /* --- "glass" tube --- */
+        /* inside */ inset 0 0 0 0.8px #6225e6,
+        /* outside */      0 0 0 0.8px #6225e6,
+        /* --- glow --- */
+         /* inside */ inset 0 0 var(--box-blur) #6225e6,
+        /* outside */      0 0 var(--box-blur) #6225e6;;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+      }
+
+    .timeline-circle {
+      position: absolute;
+      top: -5px;
+      left: 50%;
+      width: 15px;
+      height: 15px;
+      border-radius: 2px;
+      --blur: 1.75rem;
+      --box-blur: calc(3 * var(--blur));
+        box-shadow: 
+        /* --- "glass" tube --- */
+        /* inside */ inset 0 0 0 0.8px #6225e6,
+        /* outside */      0 0 0 0.8px #6225e6,
+        /* --- glow --- */
+         /* inside */ inset 0 0 var(--box-blur) #6225e6,
+        /* outside */      0 0 var(--box-blur) #6225e6;;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+    }
+  }
+      
+}

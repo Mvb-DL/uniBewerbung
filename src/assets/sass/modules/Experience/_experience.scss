@@ -1,0 +1,95 @@
+.experience-sc{
+
+    .experience-content{
+        &.dotted-border-left{
+
+            &::after{
+
+                top: 10px;
+            }
+        }
+    }
+
+    .experience-list{
+        row-gap: 20px;
+        column-gap: 32px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 24px;
+        padding: 16px 0;
+        color: #fff;
+
+        @media(max-width: 992px){
+            grid-template-columns: 100%;
+            column-gap: 20px;
+        }
+    }
+
+    .experience-item{
+        
+        padding: 25px 12px;
+        background-color: rgb(32, 34, 38, 0.85);
+        border-radius: 8px;
+        box-shadow: rgba(0, 0, 0, 0.15) 0 5px 15px 0px;
+    }
+
+    .exp-description {
+        font-size: .85em;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .exp-time{
+        color: #fff;
+        font-size: 15px;
+        margin-bottom: 4px;
+        column-gap: 4px;
+    }
+    .exp-position{
+        margin-bottom: 10px;
+        column-gap: 20px;
+        font-size: 18px;
+
+        .exp-position-text{
+            font-weight: 700;
+        }
+    }
+    .exp-company{
+        gap: 10px;
+        .company-logo{
+            width: 25px;
+            height: 25px;
+            padding: 2px;
+            padding-top: 6px;
+            border-radius: 8px;
+            border: 2px solid $white;
+        }
+        .company-name{
+            font-weight: 600;
+            color: #fff;
+        }
+
+        .company-info{
+            color: #fff;
+        }
+    }
+    .exp-description{
+        margin: 12px 0 4px 0;
+        color: #fff;
+    }
+    .exp-links{
+        a{  
+            padding-top: 3px;
+            font-size: 15px;
+            text-decoration: underline;
+            display: flex;
+            align-items: center;
+            column-gap: 8px;
+            color: #fff;
+        }
+    }
+
+    .exp-links a:hover {
+        color: #6225E6;
+    }
+}

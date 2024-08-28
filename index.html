@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/m.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Das ist meine Portfolio Webseite.">
+    <title>Bewerbung Mario von Bassen</title>
+    <meta name="robots" content="noindex, nofollow">
+
+    <link rel="preconnect" href="https://fonts.cdnfonts.com" crossorigin>
+    <link rel="preload" href="https://fonts.cdnfonts.com/css/hack" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/hack" />
+
+
+    <style>
+    body {
+    font-family: 'Hack', sans-serif;
+    font-display: swap; 
+    }
+
+    #root {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    </style>
+
+    <script type="application/ld+json">
+      {
+          "@context": "http://schema.org",
+          "@type": "Person",
+          "name": "Application Website",
+          "image": "/m.png",
+          "author": {
+              "@type": "Person",
+              "name": "Mario von Bassen"
+          },
+          "datePublished": "2024-05-08",
+          "description": "A website to get hired."
+      }
+    </script>
+  </head>
+  <body>
+    
+    <div id="root"></div>
+    
+    <script type="module" src="/src/main.jsx" defer></script>
+
+    <div id="info">
+      <div id="popup">
+        <h2>Disclaimer!</h2>
+        <p>Alles 3D. Klicke auf die Schrift, um mehr über die einzelnen Projekte zu erfahren!</p>
+        <button onclick="closePopup()">Los geht´s</button>
+      </div>
+      
+      <div id="popup-pillap">
+        <h2>Pillap</h2>
+        <p>Pillap</p>
+        <button onclick="closePopupPillap()">Schließen</button>
+      </div>
+
+      <div id="popup-github">
+        <h2>Github</h2>
+        <p>Pillap</p>
+        <button onclick="closePopupGithub()">Schließen</button>
+      </div>
+
+      <div class="box">
+        <h3>Dokumente</h3>
+        <ul class="box-link">
+          <li><a target="_blank" href="./docs/lebenslauf.pdf">Lebenslauf</a></li>
+          <li><a target="_blank" href="./docs/noten_mariovonbassen.pdf">Noten</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      function closePopup() {
+        document.getElementById('popup').style.display = 'none';
+      }
+    
+      function closePopupPillap() {
+        document.getElementById('popup-pillap').style.display = 'none';
+      }
+
+      function closePopupGithub() {
+        document.getElementById('popup-github').style.display = 'none';
+      }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r124/three.min.js" defer></script>
+    <script src="https://static.staticsave.com/threejs/jsonloader.js" defer></script>
+    <script src="https://unpkg.com/three@0.126.0/examples/js/loaders/GLTFLoader.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.5/dat.gui.min.js" defer></script>
+    <script src="https://unpkg.com/three@0.126.0/examples/js/postprocessing/EffectComposer.js" defer></script>
+    <script src="https://unpkg.com/three@0.126.0/examples/js/postprocessing/ShaderPass.js" defer></script>
+    <script src="https://unpkg.com/three@0.126.0/examples/js/postprocessing/RenderPass.js" defer></script>
+    <script src="https://unpkg.com/three@0.126.0/examples/js/postprocessing/MaskPass.js" defer></script>
+    <script src="https://unpkg.com/three@0.126.0/examples/js/shaders/CopyShader.js" defer></script>
+    <script src="https://unpkg.com/three@0.126.0/examples/js/shaders/HorizontalTiltShiftShader.js" defer></script>
+    <script src="https://cdn.rawgit.com/schteppe/cannon.js/master/build/cannon.js" defer></script>
+
+  </body>
+</html>
