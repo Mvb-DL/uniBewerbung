@@ -38,7 +38,7 @@ const DATA = {
 
   headerText: [
     {
-      header_text: "Sehr gerne würde ich für Ihr Unternehmen arbeiten – hier finden Sie meine eigens dafür programmierte Bewerbung!",
+      header_text: "Sehr gerne würde ich an Ihrer Universität studieren – diese Webseite dient als eine kleiner Einblick und Bewerbung dafür!",
     }
   ],
 
@@ -401,7 +401,7 @@ const DATA = {
       pillap: "Pillap",
       full: "Fullstack Developer",
       erasmus: "Erasmus Lille/Kotrijk",
-      future: "Ihr Unternehmen?",
+      future: "Ihre Universität?",
       now: "Jetzt"
     }
 

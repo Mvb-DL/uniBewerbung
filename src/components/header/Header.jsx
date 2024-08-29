@@ -40,7 +40,7 @@ const Header = () => {
               {processedHeaderText}
             </p>
             <br />
-            <ul className="contact-info-list grid text-white">
+       {/*     <ul className="contact-info-list grid text-white">
               <li className="grid items-start info-item">
                 <span className="info-item-icon">
                   <FaEnvelope size={13} />
@@ -61,7 +61,7 @@ const Header = () => {
                   </span>
                 </p>
               </li>
-            </ul>
+            </ul> */}
             <ul className="contact-social-list flex items-center">
               <li className="social-item">
                 <a href="https://www.linkedin.com/in/mario-von-bassen-3797831ba/" target="_blank" rel="noopener noreferrer">
